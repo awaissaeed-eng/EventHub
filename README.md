@@ -1,0 +1,89 @@
+<div align="center">
+
+# 🗓️ EventHub
+
+**A modern, responsive event discovery platform built with React and Framer Motion.**
+
+[![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge&logo=vercel)](https://event-hub-sage-ten.vercel.app/)
+[![React](https://img.shields.io/badge/React-19.2.4-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.38.0-FF0055?style=for-the-badge&logo=framer)](https://www.framer.com/motion/)
+
+[🚀 Live Demo](https://event-hub-sage-ten.vercel.app/)
+
+</div>
+
+---
+
+## 🚀 Features
+
+- **Dynamic Navigation** - Smooth transitions between Home, Events, and Contact sections
+- **Hero Section** - High-impact "Discover Events Near You" headline with motion effects
+- **Live Search** - Filter events by name, location, or category in real-time
+- **Interactive Cards** - Detailed event views with dates, times, descriptions, and register buttons
+- **Scroll Animations** - Smooth fade-up effects with stagger timing powered by Framer Motion
+- **Fully Responsive** - Optimized experience across mobile, tablet, and desktop devices
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, Vite
+- **Animations:** Framer Motion
+- **Styling:** CSS3 (Modern Flexbox/Grid)
+- **Language:** JavaScript (ES6+)
+
+---
+
+## 📸 Screenshots
+
+### Homepage
+![Homepage](screenshots/hero-section.png)
+
+### Featured Events
+![Events Grid](screenshots/events-grid.png)
+
+### Mobile View
+![Mobile View](screenshots/mobile-view.png)
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/awaissaeed-eng/EventHub.git
+cd EventHub
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+📍 Open **http://localhost:5173** in your browser.
+
+---
+
+## 👤 Author
+
+**Awais Saeed**
+
+[![GitHub](https://img.shields.io/badge/GitHub-@awaissaeed--eng-181717?style=flat&logo=github)](https://github.com/awaissaeed-eng)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Awais_Saeed-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/awaissaeed-se)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+<div align="center">
+
+⭐ **Star this repo if you find it helpful!**
+
+Made with ❤️ by [Awais Saeed](https://github.com/awaissaeed-eng)
+
+</div>
