@@ -1,16 +1,57 @@
-# React + Vite
+🎉 EventHub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive single-page web app built with React and Framer Motion to explore and discover upcoming local events. Users can view featured events, search and filter by name or location, and see event details.
 
-Currently, two official plugins are available:
+🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[Add your live preview link here]
 
-## React Compiler
+📋 About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+EventHub helps users discover events like music festivals, tech conferences, and wellness retreats. It features a clean, mobile-friendly design with smooth animations and interactive event cards.
 
-## Expanding the ESLint configuration
+✨ Features
+Navigation Bar – Home, Events, Contact, responsive for mobile
+Hero Section – Headline “Discover Events Near You” with smooth animations
+Featured Events – Event cards with name, date/time, location, description, and “Register” button
+Search & Filter – Live search to filter events
+Responsive Design – Works on mobile, tablet, and desktop
+🛠️ Technologies Used
+React
+JavaScript (ES6+)
+CSS3 / Framer Motion
+Vite
+▶️ How to Run
+Clone the repository:
+git clone https://github.com/yourusername/EventHub.git
+cd EventHub
+Install dependencies:
+npm install
+Start development server:
+npm run dev
+Open in browser at http://localhost:5173
+📸 Screenshots
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Add your screenshots in a screenshots/ folder and show them here:
+
+Homepage / Hero Section
+
+Featured Events Grid
+
+Event Card Details
+
+Mobile View
+
+Search & Filter
+
+(Update these images with your actual screenshots)
+
+👨‍💻 Author
+
+Your Name
+
+GitHub: @yourusername
+LinkedIn: Your LinkedIn
+📄 License
+
+MIT License
