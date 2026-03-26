@@ -22,10 +22,11 @@ body {
 /* Navbar */
 .navbar {
   background: #ffffff;
-  padding: 1rem 0;
+  padding: 0;
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -35,6 +36,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  min-height: auto;
 }
 
 .nav-logo {
@@ -45,6 +47,21 @@ body {
   font-weight: 600;
   color: black;
   cursor: pointer;
+  z-index: 1001;
+  position: relative;
+  padding: 0.3rem 0;
+}
+
+.logo-image {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .logo-icon {
@@ -54,19 +71,20 @@ body {
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .nav-links li a {
   color: black;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 1.05rem;
   cursor: pointer;
   transition: color 0.3s;
 }
 
 .nav-links li a:hover {
-  color: #a5b4fc;
+  color: #667eea;
 }
 
 .hamburger {
@@ -74,12 +92,14 @@ body {
   flex-direction: column;
   cursor: pointer;
   gap: 4px;
+  z-index: 1001;
+  position: relative;
 }
 
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: white;
+  background: black;
   transition: 0.3s;
   border-radius: 2px;
 }
@@ -417,7 +437,44 @@ body {
 }
 
 /* Responsive */
+/* Tablet View */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .logo-image {
+    height: 60px;
+  }
+
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .hero-subheading {
+    font-size: 1.05rem;
+  }
+
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+}
+
+/* Mobile View */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 0;
+  }
+
+  .nav-container {
+    min-height: auto;
+  }
+
+  .nav-logo {
+    padding: 0.25rem 0;
+  }
+
+  .logo-image {
+    height: 42px;
+  }
+
   .hamburger {
     display: flex;
   }
@@ -431,9 +488,10 @@ body {
     height: 100vh;
     background: #2d3748;
     flex-direction: column;
-    padding: 4rem 2rem 2rem;
-    transition: right 0.3s;
-    gap: 1rem;
+    padding: 5rem 2rem 2rem;
+    transition: right 0.3s ease-in-out;
+    gap: 0.5rem;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
   }
 
   .nav-links.active {
@@ -446,11 +504,21 @@ body {
 
   .nav-links li a {
     display: block;
-    padding: 0.75rem;
+    padding: 1rem;
+    color: white;
+    border-radius: 8px;
+    transition: background 0.3s;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .nav-links li a:hover {
+    background: rgba(102, 126, 234, 0.2);
+    color: #a5b4fc;
   }
 
   .hamburger span.active:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
+    transform: rotate(45deg) translate(7px, 7px);
   }
 
   .hamburger span.active:nth-child(2) {
@@ -458,7 +526,7 @@ body {
   }
 
   .hamburger span.active:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
+    transform: rotate(-45deg) translate(7px, -7px);
   }
 
   .hero {
@@ -472,13 +540,19 @@ body {
   }
 
   .hero-heading {
-    font-size: 2.25rem;
+    font-size: 2rem;
     max-width: 100%;
+    line-height: 1.3;
   }
 
   .hero-subheading {
-    font-size: 1rem;
+    font-size: 0.95rem;
     max-width: 100%;
+  }
+
+  .cta-button {
+    padding: 0.75rem 1.75rem;
+    font-size: 0.95rem;
   }
 
   .events-section,
@@ -490,19 +564,54 @@ body {
     font-size: 1.75rem;
   }
 
+  .search-container {
+    margin-bottom: 2rem;
+  }
+
   .events-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+
+  .event-card {
+    max-width: 100%;
+  }
+
+  .contact-form {
+    padding: 1.5rem;
   }
 }
 
 @media (max-width: 480px) {
   .nav-container {
     padding: 0 1rem;
+    min-height: auto;
+  }
+
+  .navbar {
+    padding: 0;
   }
 
   .nav-logo {
     font-size: 1.25rem;
+    padding: 0.2rem 0;
+  }
+
+  .logo-image {
+    height: 40px;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+  }
+
+  .logo-icon {
+    font-size: 1.25rem;
+  }
+
+  .nav-links {
+    width: 80%;
+    max-width: 280px;
   }
 
   .hero {
@@ -512,20 +621,21 @@ body {
 
   .hero-content {
     padding: 0 1rem;
-    text-align: center;
   }
 
   .hero-heading {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
+    line-height: 1.2;
   }
 
   .hero-subheading {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
   }
 
   .cta-button {
-    padding: 0.75rem 1.5rem;
-    font-size: 0.95rem;
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
   }
 
   .events-section,
@@ -537,12 +647,34 @@ body {
     font-size: 1.5rem;
   }
 
+  .search-container {
+    margin-bottom: 1.5rem;
+  }
+
+  .search-bar {
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem 0.7rem 2.5rem;
+  }
+
   .event-content {
     padding: 1.25rem;
   }
 
+  .event-name {
+    font-size: 1.1rem;
+  }
+
+  .event-description {
+    font-size: 0.85rem;
+  }
+
   .contact-form {
-    padding: 1.5rem;
+    padding: 1.25rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 0.9rem;
   }
 }
 

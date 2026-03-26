@@ -19,8 +19,8 @@ function Navbar() {
     <nav className="navbar">
       <div className="nav-container">
         <div className="nav-logo" onClick={() => scrollToSection('hero')}>
-          <span className="logo-icon">🎉</span>
-          <span className="logo-text">EventHub</span>
+          <img src="/eventlogo.png" alt="EventHub Logo" className="logo-image" />
+          
         </div>
 
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
