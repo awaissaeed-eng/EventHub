@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -34,10 +35,33 @@ function Contact() {
   return (
     <section id="contact" className="contact-section">
       <div className="contact-container">
-        <h2 className="section-title">Get In Touch</h2>
-        <p className="contact-subtitle">Have questions? We'd love to hear from you.</p>
+        <motion.h2 
+          className="section-title"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          Get In Touch
+        </motion.h2>
+        <motion.p 
+          className="contact-subtitle"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
+          Have questions? We'd love to hear from you.
+        </motion.p>
         
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <motion.form 
+          className="contact-form" 
+          onSubmit={handleSubmit}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input
@@ -77,10 +101,15 @@ function Contact() {
             ></textarea>
           </div>
 
-          <button type="submit" className="submit-button">
+          <motion.button 
+            type="submit" 
+            className="submit-button"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
             Send Message
-          </button>
-        </form>
+          </motion.button>
+        </motion.form>
       </div>
     </section>
   );
