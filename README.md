@@ -71,6 +71,7 @@ npm run dev
 
 [![GitHub](https://img.shields.io/badge/GitHub-@awaissaeed--eng-181717?style=flat&logo=github)](https://github.com/awaissaeed-eng)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Awais_Saeed-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/awaissaeed-se)
+[![Email](https://img.shields.io/badge/Email-awaissaeed054@gmail.com-D14836?style=flat&logo=gmail&logoColor=white)](mailto:awaissaeed054@gmail.com)
 
 ---
 
