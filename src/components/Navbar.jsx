@@ -20,7 +20,6 @@ function Navbar() {
       <div className="nav-container">
         <div className="nav-logo" onClick={() => scrollToSection('hero')}>
           <img src="/eventlogo.png" alt="EventHub Logo" className="logo-image" />
-          
         </div>
 
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
@@ -29,7 +28,7 @@ function Navbar() {
           <li><a onClick={() => scrollToSection('contact')}>Contact</a></li>
         </ul>
 
-        <div className="hamburger" onClick={toggleMenu}>
+        <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
           <span className={isMenuOpen ? 'active' : ''}></span>
           <span className={isMenuOpen ? 'active' : ''}></span>
           <span className={isMenuOpen ? 'active' : ''}></span>

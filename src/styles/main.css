@@ -477,44 +477,93 @@ body {
 
   .hamburger {
     display: flex;
+    z-index: 1003;
+    position: relative;
+  }
+
+  .hamburger.active {
+    position: fixed;
+    right: 1.5rem;
+    top: 1.5rem;
+  }
+
+  .hamburger span {
+    background: black;
+  }
+
+  .hamburger.active span {
+    background: white;
+  }
+
+  .hamburger span.active:nth-child(1) {
+    transform: rotate(45deg) translate(7px, 7px);
+  }
+
+  .hamburger span.active:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger span.active:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
   }
 
   .nav-links {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 70%;
-    max-width: 300px;
+    width: 75%;
+    max-width: 320px;
     height: 100vh;
-    background: #2d3748;
+    background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
     flex-direction: column;
-    padding: 5rem 2rem 2rem;
+    padding: 0;
     transition: right 0.3s ease-in-out;
-    gap: 0.5rem;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    gap: 0;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
+    z-index: 1002;
   }
 
   .nav-links.active {
     right: 0;
   }
 
+  .nav-links::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  }
+
   .nav-links li {
     width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .nav-links li:first-child {
+    margin-top: 100px;
   }
 
   .nav-links li a {
     display: block;
-    padding: 1rem;
+    padding: 1.25rem 2rem;
     color: white;
-    border-radius: 8px;
-    transition: background 0.3s;
+    border-radius: 0;
+    transition: all 0.3s;
     font-size: 1.1rem;
     font-weight: 600;
+    border-left: 4px solid transparent;
   }
 
   .nav-links li a:hover {
     background: rgba(102, 126, 234, 0.2);
     color: #a5b4fc;
+    border-left-color: #667eea;
+    padding-left: 2.5rem;
   }
 
   .hamburger span.active:nth-child(1) {
