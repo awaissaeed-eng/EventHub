@@ -4,7 +4,7 @@ A responsive single-page web app built with React and Framer Motion to explore a
 
 🚀 Live Demo
 
-[Add your live preview link here]
+https://event-hub-sage-ten.vercel.app/
 
 📋 About
 
