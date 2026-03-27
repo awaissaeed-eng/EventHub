@@ -37,13 +37,19 @@
 ## 📸 Screenshots
 
 ### Homepage
-![Homepage](screenshots/hero-section.png)
+
+<img width="1902" height="906" alt="image" src="https://github.com/user-attachments/assets/d0f1e86f-c34d-4972-a091-93b9fec50dad" />
+
 
 ### Featured Events
-![Events Grid](screenshots/events-grid.png)
+
+<img width="806" height="848" alt="image" src="https://github.com/user-attachments/assets/8818e748-99bb-449d-b16b-33a177b2be81" />
+
 
 ### Mobile View
-![Mobile View](screenshots/mobile-view.png)
+
+<img width="400" height="833" alt="image" src="https://github.com/user-attachments/assets/cc3c6537-e1a7-4faf-ae7e-1e400808cbe7" />
+
 
 ---
 
