@@ -2,7 +2,7 @@
 
 # 🗓️ EventHub
 
-**A modern, responsive event discovery platform built with React and Framer Motion.**
+**A modern, responsive event discovery platform built with React and Framer Motion**
 
 [![Live Demo](https://img.shields.io/badge/demo-live-success?style=for-the-badge&logo=vercel)](https://event-hub-sage-ten.vercel.app/)
 [![React](https://img.shields.io/badge/React-19.2.4-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
@@ -16,7 +16,7 @@
 
 ## 🚀 Features
 
-- **Dynamic Navigation** - Smooth transitions between Home, Events, and Contact sections
+- **Dynamic Navigation** - Smooth transitions between Home, Events, and Contact sections.....
 - **Hero Section** - High-impact "Discover Events Near You" headline with motion effects
 - **Live Search** - Filter events by name, location, or category in real-time
 - **Interactive Cards** - Detailed event views with dates, times, descriptions and register buttons
