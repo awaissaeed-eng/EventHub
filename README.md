@@ -16,7 +16,7 @@
 
 ## 🚀 Features
 
-- **Dynamic Navigation** - Smooth transitions between Home, Events, and Contact sections.....
+- **Dynamic Navigation** - Smooth transitions between Home, Events, and Contact sections
 - **Hero Section** - High-impact "Discover Events Near You" headline with motion effects
 - **Live Search** - Filter events by name, location, or category in real-time
 - **Interactive Cards** - Detailed event views with dates, times, descriptions and register buttons
