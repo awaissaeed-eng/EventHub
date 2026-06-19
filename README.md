@@ -16,12 +16,12 @@
 
 ## 🚀 Features
 
-- **Dynamic Navigation** - Smooth transitions between Home, Events, and Contact sections
-- **Hero Section** - High-impact "Discover Events Near You" headline with motion effects
-- **Live Search** - Filter events by name, location, or category in real-time
-- **Interactive Cards** - Detailed event views with dates, times, descriptions and register buttons
-- **Scroll Animations** - Smooth fade-up effects with stagger timing powered by Framer Motion
-- **Fully Responsive** - Optimized experience across mobile, tablet, and desktop devices
+- **Dynamic Navigation** - Smooth transitions between Home, Events, and Contact sections.
+- **Hero Section** - High-impact "Discover Events Near You" headline with motion effects.
+- **Live Search** - Filter events by name, location, or category in real-time.
+- **Interactive Cards** - Detailed event views with dates, times, descriptions and register buttons.
+- **Scroll Animations** - Smooth fade-up effects with stagger timing powered by Framer Motion.
+- **Fully Responsive** - Optimized experience across mobile, tablet, and desktop devices.
 
 ---
 
